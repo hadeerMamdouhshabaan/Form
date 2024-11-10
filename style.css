@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #34495E;
+}
+
+/* Container */
+.login-container {
+    width: 100%;
+    max-width: 400px;
+    background-color: #ffffff;
+    padding: 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Form */
+.login-form h2 {
+    margin-bottom: 16px; 
+    font-size: 24px;
+    color: #34495E;
+}
+
+.form-group {
+    margin-bottom: 16px; 
+}
+
+label {
+    display: block;
+    margin-bottom: 8px; 
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Button */
+.btn-submit {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #2ECC71;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-submit:hover {
+    background-color: #27ae60;
+}
+
+/* Error Message */
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 16px; 
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .login-container {
+        padding: 20px; 
+    }
+    .btn-submit {
+        font-size: 16px;
+    }
+}
